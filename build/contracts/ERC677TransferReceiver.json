@@ -1,0 +1,406 @@
+{
+  "contractName": "ERC677TransferReceiver",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"tokenFallback\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"@rsksmart/erc677/contracts/ERC677TransferReceiver.sol\":\"ERC677TransferReceiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rsksmart/erc677/contracts/ERC677TransferReceiver.sol\":{\"keccak256\":\"0xdf7296035f853e7ae69bc8fa45302d72784f8ba0758763736faa453c1f406e30\",\"urls\":[\"bzz-raw://ac0f3e860546cc3de4b3d9d84655457f22ce90851ceb59aaea5d6c32ee65d99a\",\"dweb:/ipfs/QmQufUszZziDqu2oYcdSHPRaJ3fBrhsoYSwGNEYnLtXbd4\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\n\n /*\n * Contract interface for receivers of tokens that\n * comply with ERC-677.\n * See https://github.com/ethereum/EIPs/issues/677 for details.\n */\ncontract ERC677TransferReceiver {\n    function tokenFallback(address from, uint256 amount, bytes calldata data) external returns (bool);\n}\n",
+  "sourcePath": "@rsksmart/erc677/contracts/ERC677TransferReceiver.sol",
+  "ast": {
+    "absolutePath": "@rsksmart/erc677/contracts/ERC677TransferReceiver.sol",
+    "exportedSymbols": {
+      "ERC677TransferReceiver": [
+        4197
+      ]
+    },
+    "id": 4198,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4185,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4197,
+        "linearizedBaseContracts": [
+          4197
+        ],
+        "name": "ERC677TransferReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4196,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4192,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4187,
+                  "name": "from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "233:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4186,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4189,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "247:14:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4188,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4191,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "263:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 4190,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:51:26"
+            },
+            "returnParameters": {
+              "id": 4195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4194,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "302:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4193,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "302:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "301:6:26"
+            },
+            "scope": 4197,
+            "src": "210:98:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4198,
+        "src": "172:138:26"
+      }
+    ],
+    "src": "0:311:26"
+  },
+  "legacyAST": {
+    "absolutePath": "@rsksmart/erc677/contracts/ERC677TransferReceiver.sol",
+    "exportedSymbols": {
+      "ERC677TransferReceiver": [
+        4197
+      ]
+    },
+    "id": 4198,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4185,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4197,
+        "linearizedBaseContracts": [
+          4197
+        ],
+        "name": "ERC677TransferReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4196,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4192,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4187,
+                  "name": "from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "233:12:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4186,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4189,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "247:14:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4188,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4191,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "263:19:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 4190,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:51:26"
+            },
+            "returnParameters": {
+              "id": 4195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4194,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4196,
+                  "src": "302:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4193,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "302:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "301:6:26"
+            },
+            "scope": 4197,
+            "src": "210:98:26",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4198,
+        "src": "172:138:26"
+      }
+    ],
+    "src": "0:311:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-03-28T11:43:34.203Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
